@@ -1,0 +1,96 @@
+@import url('css2.css');
+
+html, body {
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #999999;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cont {
+    position:relative;
+    background: #f9f9f9;
+    width:93%;
+    height:95%;
+    max-width:517px;
+    max-height:836px;
+    border-radius: 20px;
+}
+
+.mainText {
+    padding: 2% 7%;
+    overflow-y:auto;
+    max-height: 87%;
+}
+
+.mainText p {
+    font-size: 126%;
+}
+
+#tHeader {
+    font-size: 165%;
+    line-height: 110%;
+}
+
+.red {
+    color:#ea0607;
+}
+
+.sbold {
+    font-weight: 500;
+}
+
+#taLogo {
+    width: 20%;
+    background-size: cover;
+    float: left;
+    padding-right:4%;
+}
+
+.controls {
+    position: absolute;
+    bottom: 0;
+    display:flex;
+    border-top:1px solid #dedede;
+    height:10%;
+    width:100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.controls:before {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: #b5b5b5;
+    top: -2px;
+}
+
+.oneButton {
+    font-size: 175%;
+    color: #167be6;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    cursor:pointer;
+}
+
+#install {
+    border-right:1px solid #dedede;
+}
+
+#cancel {
+    border-left:1px solid #b5b5b5;
+}
