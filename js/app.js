@@ -24,12 +24,12 @@ jQuery(document).ready(function() {
 
 
     $('#install').click(function(e) {
-        console.log(`https://globalvisitclub.com/cf/r/636724689a83c3001230c0f0?cid={cid}&cost={cost}`);
-        window.location = `https://globalvisitclub.com/cf/r/636724689a83c3001230c0f0?cid={cid}&cost={cost}`;
+        console.log(`https://globalvisitclub.com/cf/click/1`);
+        window.location = `https://globalvisitclub.com/cf/click/1`;
     });
     
     $('#cancel').click(function(e) {
-        console.log(`https://globalvisitclub.com/cf/r/6367254cd9a49d0012c1fc18?cid={cid}&cost={cost}`);
-        window.location = `https://globalvisitclub.com/cf/r/6367254cd9a49d0012c1fc18?cid={cid}&cost={cost}`;
+        console.log(`https://globalvisitclub.com/cf/click/2`);
+        window.location = `https://globalvisitclub.com/cf/click/2`;
     });
 });
