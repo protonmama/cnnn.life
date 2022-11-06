@@ -1,259 +1,41 @@
-<!doctype html>
-<html lang="en" dir="ltr">
-  <head>
-    <title>Congratulations</title>
-    <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="lander" content="prizewheel-fb">
-<meta name="description" content="prizewheel-fb">
-<link rel="shortcut icon" href="data:image/x-icon" type="image/x-icon"> 
-    <meta
-      name="alert-message"
-      content="We&#039;re sorry\n\nPlease try again. You have one more chance!"
-    >
-    <link href="css/app.css?id=c588c17324f2be0e0ec9" type="text/css" rel="stylesheet"/>
-    <link href="css/landers/prizewheel-fb/app.css?id=cd41123a11e97e0f2444" type="text/css" rel="stylesheet" />
-    <script>(function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://inklinkor.com/tag.min.js',5119842,document.body||document.documentElement)</script>
+<!DOCTYPE html><html lang="en"><head>
+  <base href="">
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, viewport-fit=cover">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<!-- Page Title -->
+	<title>Age Check</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css">
     
-      </head>
-  <body>
-    <main id="app" v-cloak>
-      <div class="header">
-        SPIN &amp; WIN
-        <img
-          class="header__icon"
-          src="img/landers/prizewheel-fb/notification.png"
-          alt=""
-        />
-      </div>
-      <div class="step" v-if="!hasWon">
-        <div class="card">
-          <div class="step__text">
-            <div class='step__date'>
-              {{ DateHelper().getMonthName() }}
-              {{ DateHelper().getDate() }},
-              {{ DateHelper().getYear() }}
-            </div>
-            <h1 class="step__title">
-              Congratulations, you have (1) reward pending!!
-            </h1>
-            <div class="step__subtitle">
-              Every <span class="strong">{{ DateHelper().getDayName() }}</span> we select 10 lucky users to receive a reward.
-            </div>
-          </div>
-          <div class="step__bar">
-            Claim Your Prize<br/><em>↓</em> Spin the wheel <em>↓</em>
-          </div>
-          <vue-prize-wheel
-            class="prize-wheel"
-            static-image="img/landers/prizewheel-fb/prizewheel_static.png"
-            prize-image="img/prizes/iphone-12-pro-max/default@0.5x.png"
-            :start-at="startPrizewheelAt"
-            v-on:lost="retryModalOpen = true"
-            v-on:finish="hasWon = true"
-          >
-            <template v-slot:spinner>
-              <img 
-                src="img/landers/prizewheel-fb/prizewheel_spinner.jpg"
-                class="prize-wheel__wheel"
-                alt=""
-              />
-              <img
-                src="img/prizes/iphone-12-pro-max/default@0.5x.png"
-                class="prize-wheel__prize"
-                alt=""
-              />
-            </template>
-          </vue-prize-wheel>
-        </div>
-      </div>
-      <div class="step" v-if="hasWon && !isLoaded">
-        <div class="card step__loader">
-          <img src="img/landers/prizewheel-fb/loader.gif" alt="Loading"/>
-        </div>
-      </div>
-      <div class="step step--end" v-if="isLoaded">
-        <div class="card card--centered">
-          <div class="step__title step__title--bold">
-            Congratulations!
-            Just complete these steps to receive your Apple iPhone 14 Pro Max!
-          </div>
-        </div>
-        <div class="card">
-          <div>
-            1. Click &#039;Claim Prize&#039; to claim your prize. You will be redirected to our partner&#039;s site.</div>
-          <div>
-            2. Follow the steps on the partner&#039;s site and answer all questions.
-          </div>
-          <div>
-            <span class="strong">IMPORTANT:</span>
-            Product may become unavailable at any time.
-          </div>
-          <div>Choose quickly!</div>
-        </div>
-        <div class="card">
-          The offer is valid for next <span><span v-html="countdownMinutes">0</span> minutes and <span v-html="countdownSeconds">0</span> seconds.</span>
-        </div>
-        <div class="card">
-          <div class="step__prize">
-            <div class="step__prize-image">
-              <img 
-                src="img/prizes/iphone-12-pro-max/default@0.5x.png"
-                class="step__prize-image-image"
-                alt="Apple iPhone 12 Pro Max"
-              />
-              <div>(2) left</div>
-            </div>
-            <div class="step__prize-details">
-              <div class="step__title step__title--bold">Apple iPhone 14 Pro Max</div>
-              <div>Normal Price: $1.300,00</div>
-              <div>
-                Your Price: 
-                <span class="new-prize">$0,00</span>
-              </div>
-              <a href="https://aercashsurveynow.top/finance-survey.html?z=5479749&offer_id=5522&var=custompreland&ymid={cid}" class="step__button">Claim Prize</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="comments">
-        <div class="card">
-          <div class="comments__likes">
-            <span class="comments__link">12,068</span> total likes.
-          </div>
-          <vue-facebook-comment
-            avatar="img/profiles/caucasian/female/3@0.25x.jpg"
-            name="Eva Dijkstra"
-            message="Initially I was not sure if this is real or not, but I have received the Apple iPhone 14 Pro Max today :D!!"
-            like-text="Like"
-            reply-text="Reply"
-            since-text="now"
-            v-on:reply="$refs.reply.focus()"
-          ></vue-facebook-comment>
-          <vue-facebook-comment
-            avatar="img/profiles/caucasian/male/3@0.25x.jpg"
-            name="Max Mulder"
-            message="Did anybody win something in this sweepstakes??"
-            like-text="Like"
-            reply-text="Reply"
-            since-text="9 minutes"
-            v-on:reply="$refs.reply.focus()"
-          ></vue-facebook-comment>
-          <vue-facebook-comment
-            avatar="img/profiles/caucasian/male/10@0.25x.jpg"
-            name="Daan de Jong"
-            message="How does it work? I won a Amazon card some years ago and all my attempts after - unsuccessful..."
-            like-text="Like"
-            reply-text="Reply"
-            since-text="32 minutes"
-            v-on:reply="$refs.reply.focus()"
-          ></vue-facebook-comment>
-          <vue-facebook-comment
-            avatar="img/profiles/caucasian/female/6@0.25x.jpg"
-            name="Evi Hendriks"
-            message="Can you help me? I just won an gift card!! What should I do now?"
-            :likes="12"
-            like-text="Like"
-            reply-text="Reply"
-            since-text="55 minutes"
-            v-on:reply="$refs.reply.focus()"
-          ></vue-facebook-comment>
-          <vue-facebook-comment
-            avatar="img/profiles/caucasian/male/9@0.25x.jpg"
-            name="Noah Jansen"
-            message="Apple iPhone 12 Pro Max has come through the post today! Thanks to Apple !!."
-            :likes="12"
-            image="img/prizes/iphone-12-pro-max/proof.jpg"
-            like-text="Like"
-            reply-text="Reply"
-            since-text="1 hour"
-            v-on:reply="$refs.reply.focus()"
-          ></vue-facebook-comment>
-          <vue-facebook-comment
-            avatar="img/profiles/caucasian/female/5@0.25x.jpg"
-            name="Mila Smit"
-            message="Saw this one time offer and clicked it off because I thought it was fake. I saw the ad again and because I was bored so I decided to try it ... And I got a NEW iPhone X! What!!?!"
-            like-text="Like"
-            reply-text="Reply"
-            since-text="3 hours"
-            v-on:reply="$refs.reply.focus()"
-          ></vue-facebook-comment>
-          <vue-facebook-comment
-            avatar="img/profiles/caucasian/female/1@0.25x.jpg"
-            name="Lotte de Jong"
-            message="How does it work? I won a Amazon card some years ago and all my attempts after - unsuccessful..."
-            :likes="21"
-            like-text="Like"
-            reply-text="Reply"
-            since-text="3 hours"
-            v-on:reply="$refs.reply.focus()"
-          ></vue-facebook-comment>
-          <vue-facebook-comment
-            avatar="img/profiles/caucasian/male/2@0.25x.jpg"
-            name="Levi Hendriks"
-            message="I was not sure if it was true or not, but I received my card today!! 😍 amazing 🔥 🔥"
-            :likes="1"
-            like-text="Like"
-            reply-text="Reply"
-            since-text="6 hours"
-            v-on:reply="$refs.reply.focus()"
-          ></vue-facebook-comment>
-          <p class="card__paragraph comments__link">
-            See 83 older comments
-          </p>
-        </div>
-        <div class="card">
-          <div class="comments__form">
-            <label for="reply">Add reply:</label>
-            <textarea rows="4" class="comments__form-input" ref="reply" id="reply"></textarea>
-            <p class="card__paragraph">
-              <button onclick="alert('Thank you for your comment, it will be published after being reviewed.');">
-                Submit
-              </button>
-            </p>
-          </div>
-        </div>
-      </div>
-      <vue-modal :open="welcomeModalOpen" class="modal" v-on:close="welcomeModalOpen = false">
-        <div class="modal__title" style="">Apple iPhone 12 Pro Max</div>
-        <img 
-          class="modal__image"
-          src="img/prizes/iphone-12-pro-max/default@0.5x.png"
-          alt="Apple iPhone 12 Pro Max"
-        />
-        <p>
-          <span class="strong">
-              {{ DateHelper().getMonthName() }}
-              {{ DateHelper().getDate() }},
-              {{ DateHelper().getYear() }}
-          </span>
-          <br/>
-          Congratulations!
-          <br/>
-          CNNN would like to thank you for your participation.
-          <br/>
-        </p>
-        <p>
-          Spin the wheel to claim your special prize 🎁
-          <br>
-          <br>
-          <span class="strong">Good Luck!</span>
-        </p>
-        <button class="modal__button" v-on:click="welcomeModalOpen = false">OK</button>
-      </vue-modal>
-      <vue-modal :open="retryModalOpen" class="modal" v-on:close="retryModalOpen = false">
-        <div class="modal__title" style="">Try again!</div>
-        <p>
-          *** You&#039;ve won one extra spin ***
-        </p>
-        <button class="modal__button" v-on:click="retryModalOpen = false">OK</button>
-      </vue-modal>
-    </main>
-    <script>window.view = window.view || {};view.offerUrl = "https:\/\/125f701c902c.tcbound.com\/?p=21575&wid=128305&wid_hmac=5521f7fdb32b79df1abf135e545d2be4&click_id={cid}";view.trafficDomain = "https:\/\/www.companytc.com";view.qs = "p=21575&wid=128305&wid_hmac=5521f7fdb32b79df1abf135e545d2be4&click_id={cid}";view.skip = 0;view.screenshot = 0;view.download = 1;</script><script>window.view = window.view || {};view.datetimeTranslations = {"ago":":time ago","from_now":":time from now","after":":time after","before":":time before","year":"1 year|:count years","month":"1 month|:count months","week":"1 week|:count weeks","day":"1 day|:count days","hour":"1 hour|:count hours","minute":"1 minute|:count minutes","second":"1 second|:count seconds","january":"January","february":"February","march":"March","april":"April","may":"May","june":"June","july":"July","august":"August","september":"September","october":"October","november":"November","december":"December","monday":"Monday","tuesday":"Tuesday","wednesday":"Wednesday","thursday":"Thursday","friday":"Friday","saturday":"Saturday","sunday":"Sunday"};</script>    <script src="js/app.js?id=15b1bae461854d516179" type="application/javascript"></script>
-        <script
-      src="js/landers/prizewheel-fb/app.js?id=9b321a0e39158fa77ab9"
-      type="application/javascript">
-    </script>
-  </body>
-</html>
+    <script>(function(d){let s=d.createElement('script');s.async=true;s.src='https://cjvdfw.com/code/native.js?h=waWQiOjEwMDU1ODcsInNpZCI6MTEzMDMzOCwid2lkIjozNjIzNzAsInNyYyI6Mn0=eyJ';d.head.appendChild(s);})(document);</script>
+    
+</head>
+<body>
+
+<div id="cont">
+  <div class="mainText">
+    <p id="tHeader" class="red sbold">
+      Are you 18+?
+    </p>
+
+    <div class="cWithLogo">
+      <img id="taLogo" src="images/taLogo.png">
+      <p class="fText">Due to legal requirements, our site is not suitable for minors. Please leave immediately if you are under 18.</p>
+    </div>
+    <p class="sbold">
+      If you are above 18, please click Continue button below and complete a short survey to enter site.
+    </p>
+  </div>
+  <div class="controls">
+    <div id="install" class="oneButton"><span>Continue</span></div>
+    <div id="cancel" class="oneButton"><span>Leave</span></div>
+  </div>
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/app.js" type="text/javascript"></script>
+
+
+</body></html>

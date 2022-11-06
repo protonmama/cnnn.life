@@ -1,1 +1,96 @@
-.cta a.big-blue-link{display:block;font-size:16px;padding:15px 24px;font-weight:900;text-align:center;font-family:'Merriweather', serif;text-transform:uppercase;text-decoration:underline;color:#00c}.cta a.big-blue-link:hover{text-decoration:none;color:#00c}@media (min-width: 400px){.cta a.big-blue-link{font-size:20px}}@media (min-width: 480px){.cta a.big-blue-link{font-size:24px}}@media (min-width: 600px){.cta a.big-blue-link{font-size:28px}}@media (min-width: 700px){.cta a.big-blue-link{font-size:32px}}@media (min-width: 1280px){.cta a.big-blue-link{font-size:36px}}.cta .big-blue-button{background-image:linear-gradient(-180deg, #1360D8 0%, #0260B6 96%);box-shadow:0 12px 14px 0 rgba(0,0,0,0.1),inset 0 -1px 1px 0 rgba(0,0,0,0.3);border-radius:5px;color:#fff !important;text-transform:uppercase;padding:12px 0;text-decoration:none;display:block;min-width:200px}@media (min-width: 480px){.cta .big-blue-button{display:inline-block;padding:16px 24px}}.cta .big-blue-button:hover{background-image:linear-gradient(-180deg, #1360D8 0%, #02539d 96%);text-decoration:none}.cta .big-blue-button-container{font-size:16px;line-height:1;margin:1.5em 0;text-align:center}
+@import url('css2.css');
+
+html, body {
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #999999;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cont {
+    position:relative;
+    background: #f9f9f9;
+    width:93%;
+    height:95%;
+    max-width:517px;
+    max-height:836px;
+    border-radius: 20px;
+}
+
+.mainText {
+    padding: 2% 7%;
+    overflow-y:auto;
+    max-height: 87%;
+}
+
+.mainText p {
+    font-size: 126%;
+}
+
+#tHeader {
+    font-size: 165%;
+    line-height: 110%;
+}
+
+.red {
+    color:#ea0607;
+}
+
+.sbold {
+    font-weight: 500;
+}
+
+#taLogo {
+    width: 20%;
+    background-size: cover;
+    float: left;
+    padding-right:4%;
+}
+
+.controls {
+    position: absolute;
+    bottom: 0;
+    display:flex;
+    border-top:1px solid #dedede;
+    height:10%;
+    width:100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.controls:before {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: #b5b5b5;
+    top: -2px;
+}
+
+.oneButton {
+    font-size: 175%;
+    color: #167be6;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    cursor:pointer;
+}
+
+#install {
+    border-right:1px solid #dedede;
+}
+
+#cancel {
+    border-left:1px solid #b5b5b5;
+}
