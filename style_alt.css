@@ -1,0 +1,333 @@
+@font-face {
+	font-family: 'Quattrocento Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Quattrocento Sans'), local('QuattrocentoSans'), url(QuattrocentoSans.ttf) format('truetype');
+}
+@font-face {
+	font-family: 'Quattrocento Sans';
+	font-style: normal;
+	font-weight: 700;
+	src: local('Quattrocento Sans Bold'), local('QuattrocentoSans-Bold'), url(QuattrocentoSansBold.ttf) format('truetype');
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0
+}
+
+html {
+	font-size: 62.5%
+}
+
+body {
+	font-family: "Quattrocento Sans", sans-serif, Arial;
+	font-size: 100%;
+	margin: 0 auto;
+	min-height: 100%;
+	color: #000;
+	background-color: #fff76b;
+}
+
+h2 {
+	font-size: 4rem;
+	color: #e92d66;
+	margin: 1rem 0
+}
+
+h3 {
+	font-size: 2.4rem;
+	margin: 1rem 0
+}
+
+h4 {
+	font-size: 1.8rem;
+	margin: 1rem 0 2rem
+}
+
+.step {
+	display: none;
+	margin: 0 auto;
+	padding: 3rem 1rem 1rem 1rem;
+	text-align: center
+}
+
+.step:nth-child(1) {
+	display: block
+}
+
+.step p {
+	font-size: 1.8rem;
+	padding: 2rem 0
+}
+
+.step.step_check .step_head {
+	text-transform: none
+}
+
+.choose_answer {
+	font-style: italic;
+	font-size: 1.8rem;
+	padding: 2rem 0 3rem 0;
+	display: block
+}
+
+.answer_box {
+	max-width: 800px;
+	margin: 0 auto;
+	text-align: center;
+	display: inline-block;
+	vertical-align: top
+}
+
+.checkbox_wrap {
+	margin: 0 auto;
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	max-width: 600px
+}
+
+.option {
+	width: 28%;
+	position: relative;
+	text-align: left;
+	cursor: pointer;
+	text-align: center;
+	margin: 0.5rem 2%
+}
+
+.option img {
+	display: block;
+	width: 100%;
+	border: 3px solid #000;
+	border-radius: 8px
+}
+
+.option-title {
+	font-size: 1.8rem;
+	padding-top: 5px
+}
+
+.option.checked img {
+	border-color: #21b6d9
+}
+
+.option.checked .option-title {
+	color: #21b6d9
+}
+
+.btn {
+	color: #fff;
+	display: block;
+	margin: 2rem auto;
+	padding: 13px 0;
+	max-width: 220px;
+	width: 100%;
+	font-size: 2rem;
+	font-family: Arial;
+	border: none;
+	text-decoration: none;
+	background: #21b6d9;
+	-webkit-transition: all .2s;
+	transition: all .2s;
+}
+
+.btn:hover {
+	background: #0daace;
+}
+
+@media screen and (max-width: 767px) {
+	html {
+		font-size: 55%;
+	}
+
+	h2 {
+		font-size: 3rem;
+	}
+
+	.option-title {
+		font-size: 1.4rem;
+	}
+}
+
+.image {
+	display: block;
+	max-width: 320px;
+	margin: 0 auto;
+}
+
+.next-step {
+	cursor: pointer;
+}
+
+#popupText {
+	font-size:1.8rem;
+}
+
+/* =========================================================================
+   Green Style
+ =========================================================================== */
+
+body.land-green {
+	color: #32445c;
+	background-color: #e7f0db;
+}
+
+.land-green h2 {
+	color: #ea1d5d;
+}
+
+.land-green .btn {
+	background: #32c26b;
+	color: #fff;
+}
+
+.land-green .btn:hover {
+	background: #3fdf7e;
+}
+
+.land-green .unsubscribe a {
+	color: #32445c;
+}
+
+.land-green .option img {
+	border-color: #000;
+}
+
+.land-green .option.checked img {
+	border-color: #32c26b;
+}
+
+.land-green .option.checked .option-title {
+	color: #32c26b;
+}
+
+/* =========================================================================
+   Dark Style
+ =========================================================================== */
+
+body.land-dark {
+	color: #fff;
+	background-color: #2b2e37;
+}
+
+.land-dark h2 {
+	color: #fff76b;
+}
+
+.land-dark .btn {
+	background: #f5a623;
+	color: #fff;
+}
+
+.land-dark .btn:hover {
+	background: #ea9b23;
+}
+
+.land-dark .unsubscribe a {
+	color: #bdbdbd;
+}
+
+.land-dark .option img {
+	border-color: #000;
+}
+
+.land-dark .option.checked img {
+	border-color: #f5a623;
+}
+
+.land-dark .option.checked .option-title {
+	color: #f5a623;
+}
+
+/* =========================================================================
+   Gray Style
+ =========================================================================== */
+
+body.land-gray {
+	color: #32445c;
+	background-color: #f5f7fb;
+}
+
+.land-gray h2 {
+	color: #ea1d5d;
+}
+
+.land-gray .btn {
+	background: #32c26b;
+	color: #fff;
+}
+
+.land-gray .btn:hover {
+	background: #3fdf7e;
+}
+
+.land-gray .unsubscribe a {
+	color: #32445c;
+}
+
+.land-gray .option img {
+	border-color: #000;
+}
+
+.land-gray .option.checked img {
+	border-color: #32c26b;
+}
+
+.land-gray .option.checked .option-title {
+	color: #32c26b;
+}
+
+/* =========================================================================
+   Unsubscribe
+ =========================================================================== */
+
+.unsubscribe {
+	font-size: 14px;
+	text-align: center;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 10;
+	padding: 20px;
+}
+
+.unsubscribe a {
+	color: #32445c;
+	text-decoration: underline;
+}
+
+@media (max-height: 700px) {
+	.unsubscribe {
+		position: static;
+		padding: 0 10px 10px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
